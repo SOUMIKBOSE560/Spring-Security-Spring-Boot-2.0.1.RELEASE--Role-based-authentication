@@ -20,7 +20,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableMethodSecurity
 public class SpringSecurityConfig {
 
-    //CREATE USERS
+    //AUTHENTICATION
     @Bean
     public UserDetailsService userDetailsService(PasswordEncoder encoder) {
         User admin = (User) User.builder()
